@@ -1,0 +1,8 @@
+<%- include('header'); -%>
+
+<main role="main" class="main">
+  <h2 class="taglist <%- tag  %>">#<%- tag  %></h2>
+  <%- include('post.ejs', { items }); %>
+</main>
+
+<%- include('footer'); -%>

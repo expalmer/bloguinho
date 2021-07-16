@@ -1,0 +1,38 @@
+{
+  "dependencies": {
+    "autoprefixer": "^10.3.1",
+    "cssnano": "^5.0.6",
+    "ejs": "^3.1.6",
+    "fs-extra": "^0.26.7",
+    "gray-matter": "^2.1.1",
+    "is-utf8": "^0.2.1",
+    "marked": "^2.1.3",
+    "metalsmith": "^2.3.0",
+    "metalsmith-markdown": "^1.3.0",
+    "multimatch": "^5.0.0",
+    "npm-watch": "^0.10.0",
+    "postcss": "^8.3.5",
+    "precss": "^4.0.0",
+    "prismjs": "^1.24.1",
+    "recursive-readdir": "^2.2.2",
+    "rimraf": "^2.7.1",
+    "serve": "^12.0.0",
+    "slugify": "^1.5.3",
+    "stat-mode": "^0.2.2"
+  },
+  "watch": {
+    "build": {
+      "patterns": [
+        "src",
+        "templates"
+      ],
+      "extensions": "*"
+    }
+  },
+  "scripts": {
+    "start": "node build.js",
+    "build": "node build.js",
+    "serve": "serve build",
+    "watch": "npm-watch"
+  }
+}

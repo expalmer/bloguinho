@@ -1,0 +1,22 @@
+<%- include('header'); -%>
+
+<main role="main" class="main">
+  <article class="post">
+    <header>
+      <time class="post__time">3 Jul 2021</time>
+      <h1 class="post__title post__title--lg">
+        <%- title  %>
+      </h1>
+    </header>
+    <iside>
+      <% tags.forEach(tag => { %>
+      <a href="/<%- tag %>/" class="tag <%- tag %>">#<%- tag %></a>
+      <% }) %>
+    </iside>
+    <div class="post__content">
+      <%- contents %> 
+    </div>
+  </article>
+</main>
+  
+<%- include('footer'); -%>

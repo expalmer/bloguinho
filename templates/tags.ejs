@@ -1,0 +1,21 @@
+<%- include('header'); -%>
+
+<main role="main" class="main">
+  <ul class="ul">
+    <% tags.forEach(function(tag) { %>
+      <li class="li">
+        <div class="limiter">
+          <article>
+            <header>
+              <h3 class="title <%- tag.name  %> align-center">
+                <a href="<%- tag.name  %>" class="link">#<%- tag.name  %> <small>[ <%- tag.total  %> ]</small></a>
+              </h3>
+            </header>
+          </article>
+        </div>
+      </li>
+    <% }) %>
+  </ul>
+</main>
+
+<%- include('footer'); -%>

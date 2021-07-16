@@ -1,0 +1,23 @@
+<ul class="ul">
+  <% items.forEach(function(post) { %>
+    <li class="ul__li">
+      <article class="post">
+        <header class="column">
+          <time class="post__time">3 Jul 2021</time>
+          <h3 class="post__title">
+            <a href="/<%- post.slug  %>" class="post__title__link">
+              <%- post.title  %>
+            </a>
+          </h3>
+        </header>
+        <p class="post__resume"><%- post.resume %></p>
+        <iside>
+          <% post.tags.forEach(tag => { %>
+          <a href="/<%- tag %>/" class="tag <%- tag %>">#<%- tag %></a>
+          <% }) %>
+        </iside>
+      </article>
+    </li>
+  <% }) %>
+</ul>
+
